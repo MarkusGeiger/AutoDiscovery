@@ -1,1 +1,5 @@
 # AutoDiscovery
+
+Packages:
+* Rssdp
+* DeviceId
