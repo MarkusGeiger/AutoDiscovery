@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -17,10 +17,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+app.MapGet("/descriptiondocument.xml", async () => {
+  var xmlText = await File.ReadAllTextAsync("devicedescription.xml");
+  //System.Console.WriteLine(xmlText);
+  return Results.Text(xmlText, contentType: "application/xml");
+});
 
 app.Run();

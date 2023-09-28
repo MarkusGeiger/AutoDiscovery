@@ -1,0 +1,20 @@
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+  <specVersion>
+    <major>1</major>
+    <minor>0</minor>
+  </specVersion>
+  <URLBase>http://192.168.2.93:5000</URLBase>
+  <device>
+    <deviceType>urn:my-namespace:device:MyCustomDevice:1</deviceType>
+    <friendlyName>I am a light controller</friendlyName>
+    <manufacturer>Royal Philips Electronics</manufacturer>
+    <manufacturerURL>http://www.philips.com</manufacturerURL>
+    <modelDescription>Philips hue Personal Wireless Lighting</modelDescription>
+    <modelName>Philips hue bridge 2012</modelName>
+    <modelNumber>23409823049823</modelNumber>
+    <modelURL>http://www.meethue.com</modelURL>
+    <serialNumber>asd09f8s90832</serialNumber>
+    <UDN>uuid:EA392JDRCGGEC6R8GARFS73WWWVMPVBD1FEBV8RZZWBAE7CEWJ10</UDN>
+    <presentationURL>http://192.168.2.93:5000/swagger</presentationURL>
+  </device>
+</root>
